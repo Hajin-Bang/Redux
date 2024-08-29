@@ -23,6 +23,7 @@ function AddForm() {
             addTodo({
               id: new Date().getTime(),
               title: todo,
+              isCompleted: false,
             })
           );
         }}

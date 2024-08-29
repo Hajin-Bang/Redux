@@ -1,6 +1,6 @@
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { deleteTodo, switchTodo } from "../redux/modules/todos";
+import { deleteTodo, switchTodo } from "../redux/slices/todosSlice";
 
 function TodoList() {
   // 스토어 조회하기 (모든 TodoList 조회)

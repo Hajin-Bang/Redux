@@ -13,4 +13,14 @@ export const deleteLog = (payload) => {
 const initialState = [];
 
 // Reducer
-const logs = (state, action) => {};
+const logs = (state = initialState, action) => {
+  switch (action.type) {
+    case DELETE_LOG:
+      return [...state, action.payload];
+
+    default:
+      return state;
+  }
+};
+
+export default logs;
